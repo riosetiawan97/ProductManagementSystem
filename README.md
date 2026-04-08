@@ -3,14 +3,23 @@ Proyek ini adalah sistem manajemen inventaris produk berbasis RESTful API yang d
 
 - Tech Stack
 Framework: .NET 8 Web API
+
 Language: C#
+
 Database: SQL Server (LocalDB)
+
 ORM: Entity Framework Core
+
 Security: JWT (JSON Web Token) Authentication
+
 Logging: Serilog (File & Console Sink)
+
 Caching: In-Memory Cache
+
 Testing: xUnit, Moq
+
 Coverage: ReportGenerator (Cobertura)
+
 
 - Fitur & Keunggulan Arsitektur
 1. Repository Pattern
@@ -70,10 +79,11 @@ Laporan Coverage
 Aplikasi ini menggunakan Swagger untuk dokumentasi interaktif.
 1. Buka /swagger setelah aplikasi berjalan.
 2. Gunakan endpoint /api/Auth/login dengan kredensial berikut untuk mendapatkan token:
+3. 
 Username: admin
 Password: password123
-3. Klik tombol Authorize di pojok kanan atas.
-4. Masukkan token dengan format: Bearer [TOKEN_ANDA].
+4. Klik tombol Authorize di pojok kanan atas.
+5. Masukkan token dengan format: Bearer [TOKEN_ANDA].
 
 ### Frontend Setup
 1. cd frontend
