@@ -79,7 +79,6 @@ Laporan Coverage
 Aplikasi ini menggunakan Swagger untuk dokumentasi interaktif.
 1. Buka /swagger setelah aplikasi berjalan.
 2. Gunakan endpoint /api/Auth/login dengan kredensial berikut untuk mendapatkan token:
-3. 
 Username: admin
 Password: password123
 4. Klik tombol Authorize di pojok kanan atas.
