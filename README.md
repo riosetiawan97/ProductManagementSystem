@@ -3,21 +3,13 @@ Proyek ini adalah sistem manajemen inventaris produk berbasis RESTful API yang d
 
 - Tech Stack
 Framework: .NET 8 Web API
-
 Language: C#
-
 Database: SQL Server (LocalDB)
-
 ORM: Entity Framework Core
-
 Security: JWT (JSON Web Token) Authentication
-
 Logging: Serilog (File & Console Sink)
-
 Caching: In-Memory Cache
-
 Testing: xUnit, Moq
-
 Coverage: ReportGenerator (Cobertura)
 
 - Fitur & Keunggulan Arsitektur
@@ -40,56 +32,48 @@ Visual Studio 2022 (v17.9+) atau .NET 8 SDK
 SQL Server LocalDB
 
 Langkah-langkah
-Clone Repository
-
+1. Clone Repository
 Bash :
-git clone <repository-url>
-Konfigurasi Database
-Buka appsettings.json dan sesuaikan DefaultConnection jika diperlukan:
+git clone https://github.com/riosetiawan97/ProductManagementSystem.git
 
+2. Konfigurasi Database
+Buka appsettings.json dan sesuaikan DefaultConnection jika diperlukan:
 JSON :
 "ConnectionStrings": {
   "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=ProductDb;..."
 }
-Database Migration
-Jalankan perintah berikut di Package Manager Console atau Terminal:
 
+3. Database Migration
+Jalankan perintah berikut di Package Manager Console atau Terminal:
 PowerShell :
 dotnet ef database update
-Run Application
-Tekan F5 di Visual Studio atau jalankan:
 
+4. Run Application
+Tekan F5 di Visual Studio atau jalankan:
 PowerShell :
 dotnet run --project Backend
+
 - Testing & Quality Assurance
 Proyek ini memiliki fokus tinggi pada pengujian otomatis untuk meminimalisir bug.
-
 Total Code Coverage: 82.5%
-
 Framework: xUnit & Moq
 
 Menjalankan Unit Test
 Untuk menjalankan pengujian dan melihat hasil di terminal:
-
 PowerShell :
 dotnet test --collect:"XPlat Code Coverage"
+
 Laporan Coverage
 <img src="CoverageReport/test.png" alt="Coverage Report" width="500"/>
 
 - API Documentation (Swagger)
 Aplikasi ini menggunakan Swagger untuk dokumentasi interaktif.
-
-Buka /swagger setelah aplikasi berjalan.
-
-Gunakan endpoint /api/Auth/login dengan kredensial berikut untuk mendapatkan token:
-
+1. Buka /swagger setelah aplikasi berjalan.
+2. Gunakan endpoint /api/Auth/login dengan kredensial berikut untuk mendapatkan token:
 Username: admin
-
 Password: password123
-
-Klik tombol Authorize di pojok kanan atas.
-
-Masukkan token dengan format: Bearer [TOKEN_ANDA].
+3. Klik tombol Authorize di pojok kanan atas.
+4. Masukkan token dengan format: Bearer [TOKEN_ANDA].
 
 ### Frontend Setup
 1. cd frontend
